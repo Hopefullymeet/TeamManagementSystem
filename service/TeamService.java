@@ -35,7 +35,7 @@ public class TeamService {
 
         boolean haveFind = false;
 
-        for (int i = 0; i < team.length; i++) {
+        for (int i = 0; i < total; i++) {
 
             if(haveFind) {
 
@@ -56,5 +56,21 @@ public class TeamService {
             throw new TeamException("找不到所要删除的TeamID");
         }
 
+    }
+
+    public int getCounter() {
+        return counter;
+    }
+
+    public void setCounter(int counter) {
+        this.counter = counter;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
     }
 }
